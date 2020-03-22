@@ -1,3 +1,3 @@
 FROM scratch
-ADD hi /hi
+ADD lib/hi /hi
 CMD ["/hi"]
