@@ -31,9 +31,10 @@ jobs:
         shell: bash
         run: make
 
-      - name: copy hi to temp dir
-        run: cp hi ../temp/.
-        shell: bash
+      - uses: actions/upload-artifact@v1
+        with:
+          name: hi
+          path: ../temp
 
       - name: Display content GITHUB_WORKSPACE
         run: ls -al $GITHUB_WORKSPACE
