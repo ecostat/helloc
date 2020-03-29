@@ -16,7 +16,10 @@ jobs:
       run: echo $PWD
       shell: bash
           
-    - uses: actions/checkout@v2
+    - name: Display workin_directory
+      run: echo $WORKING_DIRECTORY
+      shell: bash
+      
     - name: make
       run: make
 
