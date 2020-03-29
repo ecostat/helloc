@@ -12,16 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Display pwd
-      run: echo $PWD
-      shell: bash
-          
-    - name: Display workin_directory
-      run: echo $WORKING_DIRECTORY
-      shell: bash
-      
-    - name: make
-      run: make
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Display pwd
+        run: echo $PWD
+        shell: bash
 
-    - name: make install
-      run: make install
+      - name: Clean temp directory
+        run: rm -rf *
+        working-directory: ./temp
+
+      - name: make
+        run: make
+
+      - name: make install
+        run: make install
