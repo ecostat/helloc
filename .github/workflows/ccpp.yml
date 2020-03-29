@@ -29,8 +29,11 @@ jobs:
 
       - name: make
         shell: bash
-        
         run: make
+
+      - name: Display content GITHUB_WORKSPACE
+        run: ls -al $GITHUB_WORKSPACE
+        shell: bash
 
       - name: make install
         run: make install
