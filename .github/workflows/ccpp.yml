@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Clean temp directory
       run: rm -rf *
-      working-directory: ~/helloc/temp
+      working-directory: ../../temp
           
     - uses: actions/checkout@v2
     - name: make
