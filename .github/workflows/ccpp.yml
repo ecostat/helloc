@@ -31,6 +31,10 @@ jobs:
         shell: bash
         run: make
 
+      - name: copy hi to temp dir
+        run: cp hi ../temp/.
+        shell: bash
+
       - name: Display content GITHUB_WORKSPACE
         run: ls -al $GITHUB_WORKSPACE
         shell: bash
