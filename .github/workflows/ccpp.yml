@@ -19,11 +19,17 @@ jobs:
         run: echo $PWD
         shell: bash
 
+      - name: Display GITHUB_WORKSPACE
+        run: echo $GITHUB_WORKSPACE
+        sheöö: bash
+        
       - name: Clean temp directory
         run: rm -rf *
         working-directory: ./temp
 
       - name: make
+        sheöö: bash
+        
         run: make
 
       - name: make install
