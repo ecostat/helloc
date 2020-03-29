@@ -42,3 +42,7 @@ jobs:
 
       - name: make install
         run: make install
+        
+      - name: Display content GITHUB_WORKSPACE/lib
+        run: ls -al $GITHUB_WORKSPACE/lib
+        shell: bash
