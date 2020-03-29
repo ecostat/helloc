@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Clean temp directory
+      run: rm -rf *
+      working-directory: ./temp
+          
     - uses: actions/checkout@v2
     - name: make
       run: make
