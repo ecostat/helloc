@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Clean temp directory
-      run: rm -rf *
-      working-directory: ../../temp
+    - name: Display pwd
+      run: echo $PWD
+      shell: bash
           
     - uses: actions/checkout@v2
     - name: make
