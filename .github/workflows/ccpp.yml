@@ -15,5 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: make
       run: make
+      working-directory: ./temp
     - name: make install
       run: make install
