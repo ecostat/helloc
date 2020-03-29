@@ -34,7 +34,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: hi
-          path: ../temp
+          path: ./temp
 
       - name: Display content GITHUB_WORKSPACE
         run: ls -al $GITHUB_WORKSPACE
