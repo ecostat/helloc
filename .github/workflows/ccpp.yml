@@ -28,7 +28,7 @@ jobs:
         working-directory: ./temp
 
       - name: make
-        sheöö: bash
+        shell: bash
         
         run: make
 
